@@ -12,6 +12,8 @@ dtwm-clean:
 	make -C src/dtwm clean
 
 install: all
+	mkdir -p ${INSTDIR}/bin ${INSTDIR}/share/dtwm ${DESTDIR}/etc/X11/dtwm ${DESTDIR}/etc/X11/app-defaults
 	install -s -m 0755 bin/dtwm ${INSTDIR}/bin/
-	#install -s -m 0644 -d conf/ ${DESTDIR}/etc/X11/
-	install -s -m 0644 COPYING.MOTIF ${INSTDIR}/share/dtwm/
+	install -m 0644 conf/dtwm/Dtwm ${DESTDIR}/etc/X11/app-defaults/Dtwm
+	install -m 0644 conf/dtwm/system.dtwmrc ${DESTDIR}/etc/X11/mwm/system.dtwmrc
+	install -m 0644 COPYRIGHT.MOTIF ${DESTDIR}${PREFIX}/share/dtwm/
