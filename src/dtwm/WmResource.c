@@ -645,7 +645,7 @@ Const char MENU_ITEM_PART[] = "menu";
  *  appearance and behavior resources.  These resources are specified
  *  with the following syntax:
  *
- *      "Mwm*<resource_identifier>".
+ *      "Dtwm*<resource_identifier>".
  *
  *************************************<->***********************************/
 
@@ -1126,7 +1126,7 @@ XtResource wmGlobalScreenResources[] =
  *  (default) behavior.  These resources are specified with the following
  *  syntax:
  *
- *      "Mwm*<resource_identifier>".
+ *      "Dtwm*<resource_identifier>".
  *
  ******************************<->***********************************/
 
@@ -1237,7 +1237,7 @@ XtResource wmStdGlobalResources[] =
  *  appearance and behavior resources.  These resources are specified
  *  with the following syntax:
  *
- *      "Mwm*screen<#>*<resource_identifier>".
+ *      "Dtwm*screen<#>*<resource_identifier>".
  *
  ******************************<->***********************************/
 
@@ -1589,7 +1589,7 @@ XtResource wmScreenResources[] =
  *  the standard (default) behavior.  These resources are specified with 
  *  the following syntax:
  *
- *      "Mwm*screen<#>*<resource_identifier>".
+ *      "Dtwm*screen<#>*<resource_identifier>".
  *
  ******************************<->***********************************/
 
@@ -1681,7 +1681,7 @@ XtResource wmStdScreenResources[] =
  *  specific appearance and behavior resources.  These resources are 
  *  specified with the following syntax:
  *
- *      "Mwm*[screen<#>*]<workspace>*<resource_identifier>".
+ *      "Dtwm*[screen<#>*]<workspace>*<resource_identifier>".
  *
  ******************************<->***********************************/
 #ifdef WSM
@@ -1726,7 +1726,7 @@ XtResource *wmWorkspaceResources = NULL;
  *  the standard (default) behavior.  These resources are specified with 
  *  the following syntax:
  *
- *      "Mwm*[screen<#>*]<workspace>*<resource_identifier>".
+ *      "Dtwm*[screen<#>*]<workspace>*<resource_identifier>".
  *
  *************************************<->***********************************/
 
@@ -1761,7 +1761,7 @@ XtResource *wmStdWorkspaceResources = NULL;
  *
  *  These resources are specified with the following syntax:
  *
- *      "Mwm*[screen*][workspace*]backdrop*<resource_id>:"
+ *      "Dtwm*[screen*][workspace*]backdrop*<resource_id>:"
  *
  *  NOTE: The order of these resources is important for correct
  *        dynamic processing!!!!
@@ -1825,7 +1825,7 @@ XtResource wmBackdropResources[] =
  *
  *  These resources are specified with the following syntax:
  *
- *      "Mwm*[screen*][workspace*]workspacePresence*<resource_id>:"
+ *      "Dtwm*[screen*][workspace*]workspacePresence*<resource_id>:"
  *
  *************************************<->***********************************/
 
@@ -1855,7 +1855,7 @@ XtResource wmWsPresenceResources[] =
  *  window manager resources.  These resources are specified with the
  *  following syntax:
  *
- *      "Mwm*<client_name_or_class>*<resource_identifier>"
+ *      "Dtwm*<client_name_or_class>*<resource_identifier>"
  *
  *************************************<->***********************************/
 
@@ -2065,7 +2065,7 @@ XtResource wmClientResources[] =
  *  (default) behavior.  These resources are specified with the
  *  following syntax:
  *
- *      "Mwm*<client_name_or_class>*<resource_identifier>"
+ *      "Dtwm*<client_name_or_class>*<resource_identifier>"
  *
  *************************************<->***********************************/
 
@@ -2197,7 +2197,7 @@ XtResource wmStdClientResources[] =
  *  window manager resources that affect the appearance of the client
  *  matte.  These resources are specified with the following syntax:
  *
- *      "Mwm*<client_name_or_class>*<resource_identifier>"
+ *      "Dtwm*<client_name_or_class>*<resource_identifier>"
  *
  *************************************<->***********************************/
 
@@ -2276,10 +2276,10 @@ XtResource wmClientResourcesM[] =
  *  This data structure is used in the processing of component appearance
  *  resources.  These resources are specified with the following syntax:
  *
- *      "Mwm*<resource_identifier>"
- *      "Mwm*client*<resource_identifier>"
- *      "Mwm*icon*<resource_identifier>"
- *      "Mwm*feedback*<resource_identifier>"
+ *      "Dtwm*<resource_identifier>"
+ *      "Dtwm*client*<resource_identifier>"
+ *      "Dtwm*icon*<resource_identifier>"
+ *      "Dtwm*feedback*<resource_identifier>"
  *
  *************************************<->***********************************/
 

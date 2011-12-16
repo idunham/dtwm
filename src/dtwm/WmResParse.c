@@ -2264,8 +2264,8 @@ FILE *FopenConfigFile (void)
      * First try HOME_MWMRC, then try SYS_MWMRC .
      */
 
-#define HOME_MWMRC "/.mwmrc"
-#define SLASH_MWMRC "/system.mwmrc"
+#define HOME_MWMRC "/.dtwmrc"
+#define SLASH_MWMRC "/system.dtwmrc"
 
 #ifdef MOTIF_ONE_DOT_ONE
     GetHomeDirName(cfileName);
@@ -2278,9 +2278,9 @@ FILE *FopenConfigFile (void)
     {
 	/*
 	 *
-	 *  Looking for $HOME/$LANG/.mwmrc
+	 *  Looking for $HOME/$LANG/.dtwmrc
 	 *  --or--if $LANG is NULL
-	 *  Looking for $HOME/.mwmrc
+	 *  Looking for $HOME/.dtwmrc
 	 *
 	 */
 	if (LANG != NULL)
@@ -2294,14 +2294,14 @@ FILE *FopenConfigFile (void)
     {
 	/*
 	 *
-	 *  Looking for $HOME/.dt/$LANG/dtwmrc
+	 *  Looking for $HOME/.opencde/$LANG/dtwmrc
 	 *
 	 *  --or--if $LANG is NULL--
 	 *
-	 *  Looking for $HOME/.dt/dtwmrc
+	 *  Looking for $HOME/.opencde/dtwmrc
 	 *
 	 */
-	strncat(cfileName, "/.dt/", MAXWMPATH-strlen(cfileName));
+	strncat(cfileName, "/.opencde/", MAXWMPATH-strlen(cfileName));
 
 	if (LANG != NULL)
 	{
@@ -2341,7 +2341,7 @@ FILE *FopenConfigFile (void)
 	if (MwmBehavior)
 	{
 	    /* 
-	     * Just try $HOME/.mwmrc
+	     * Just try $HOME/.dtwmrc
 	     */
 	    strncat(cfileName, HOME_MWMRC, MAXWMPATH - strlen(cfileName));
 	}
