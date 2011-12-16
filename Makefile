@@ -17,3 +17,4 @@ install: all
 	install -m 0644 conf/dtwm/Dtwm ${DESTDIR}/etc/X11/app-defaults/Dtwm
 	install -m 0644 conf/dtwm/system.dtwmrc ${DESTDIR}/etc/X11/mwm/system.dtwmrc
 	install -m 0644 COPYRIGHT.MOTIF ${DESTDIR}${PREFIX}/share/dtwm/
+	install -m 0644 -d man/ ${INSTDIR}/share/
