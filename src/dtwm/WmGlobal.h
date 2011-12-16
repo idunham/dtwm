@@ -110,8 +110,8 @@ extern int WmIdentity;
 #endif /* WSM */
 
 /* window manager name and class used to get resources: */
-#define	WM_RESOURCE_CLASS	"Mwm"
-#define WM_RESOURCE_NAME	"mwm"
+#define	WM_RESOURCE_CLASS	"Dtwm"
+#define WM_RESOURCE_NAME	"dtwm"
 
 #ifdef WSM
 #define	DT_WM_RESOURCE_CLASS	"Dtwm"
